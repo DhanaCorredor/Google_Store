@@ -1,62 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Google Store</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    
-  </header>
-  <main>
-    <section></section>
-    <section class="product-card">
-      <form>
-        <fieldset class="color-selector">
-          <legend>Choose a color</legend>
-          <label>
-            <input type="radio" name="color" value="blue">
-            <span class="color blue"></span>
-          </label>
-          <label>
-            <input type="radio" name="color" value="white">
-            <span class="color white"></span>
-          </label>
-          <label>
-            <input type="radio" name="color" value="black">
-            <span class="color black"></span>
-          </label>
-          <label>
-            <input type="radio" name="color" value="grey">
-            <span class="color grey"></span>
-          </label>
-          <label>
-            <input type="radio" name="color" value="green">
-            <span class="color green"></span  >
-          </label>
-          <label>
-            <input type="radio" name="color" value="orange">
-            <span class="color orange"></span>
-          </label>
-        </fieldset>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Store</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!--logo-->
+        <a><img src="#" alt="Logo Google" /></a>
+        <!--Menú-->
+        <ul>
+          <li><a href="#">Phones</a></li>
+          <li><a href="#">Earbuds</a></li>
+          <li><a href="#">Watches</a></li>
+          <li><a href="#">Smart Home</a></li>
+          <li><a href="#">Accesories</a></li>
+          <li><a href="#">Subscriptions</a></li>
+        </ul>
+        <!--Iconos de Acción-->
+        <ul>
+          <li><a href="#">icono_lupa</a></li>
+          <li><a href="#">icono_preguntas</a></li>
+          <li><a href="#">icono_carrito de compras</a></li>
+          <li><a href="#">icono_usuario</a></li>
+        </ul>
+        <!este icono se usará en tamaño de móvil>
+        <ul>
+          <li>icono de menu</li>
+        </ul>
+      </nav>
+    </header>
 
-        <h2>229 €</h2>
-        <select name="Cantidad" id="cantidad">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-        </select>
-        <button type="submit">Add to Cart</button>  
-      </form>
-      <footer class="delivery">
-        <p>Delivers <time datetime="2024-04-20"> 20 Apr  </time> to
-          <strong>08023</strong>
-        </p>
-      </footer>
+    <main>
+      <!--section 1>
+    <section>
+
+
     </section>
-  </main>
-  <footer></footer>
-</body>
+    
+
+
+  <!--section 2-->
+      <section class="product-card">
+        <form>
+          <fieldset class="color-selector">
+            <legend>Choose a color</legend>
+            <label>
+              <input type="radio" name="color" value="blue" />
+              <span class="color blue"></span>
+            </label>
+            <label>
+              <input type="radio" name="color" value="white" />
+              <span class="color white"></span>
+            </label>
+            <label>
+              <input type="radio" name="color" value="black" />
+              <span class="color black"></span>
+            </label>
+            <label>
+              <input type="radio" name="color" value="grey" />
+              <span class="color grey"></span>
+            </label>
+            <label>
+              <input type="radio" name="color" value="green" />
+              <span class="color green"></span>
+            </label>
+            <label>
+              <input type="radio" name="color" value="orange" />
+              <span class="color orange"></span>
+            </label>
+          </fieldset>
+          <h2>229 €</h2>
+          <select name="Cantidad" id="cantidad">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          <button type="submit">Add to Cart</button>
+        </form>
+        <footer class="delivery">
+          <p>
+            Delivers <time datetime="2024-04-20"> 20 Apr </time> to
+            <strong>08023</strong>
+          </p>
+        </footer>
+      </section>
+    </main>
+
+    <!--footer-->
+    <footer></footer>
+  </body>
 </html>
