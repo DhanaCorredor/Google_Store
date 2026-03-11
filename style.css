@@ -1,2 +1,65 @@
+/* --- RESET / NORMALIZE BASADO EN ATOMS --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
- 
+body {
+    /* Usamos la tipografía Inter que pide el profesor */
+    font-family: 'Inter', sans-serif; 
+    background-color: #FFFFFF;
+    color: #353A49; /* Color de texto según tus átomos */
+    padding: 40px;
+}
+
+/* --- TU SECCIÓN (TARJETA PRODUCTO) --- */
+
+.tarjeta-producto {
+    max-width: 450px;
+}
+
+/* Link de retroceso: Text Inter/regular/12px */
+.tarjeta-producto p:first-of-type {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #57626B; /* Gris intermedio de tus átomos */
+}
+
+/* Contenedor de imagen (basado en el Image Container del diagrama) */
+.tarjeta-producto img {
+    display: block;
+    width: 200px; /* Tamaño que tienes en tu HTML */
+    margin: 0 auto 40px auto;
+}
+
+/* Título: Inter/bold/35px */
+.tarjeta-producto h1 {
+    font-size: 35px;
+    font-weight: 700; /* Bold */
+    line-height: 1.2;
+    margin-bottom: 10px;
+    color: #353A49;
+}
+
+/* Subtítulo (Music & Sound): Inter/bold/20px */
+.tarjeta-producto p:last-of-type {
+    font-size: 20px;
+    font-weight: 700; /* Bold según el átomo de subtítulos */
+    margin-bottom: 25px;
+}
+
+/* Precio: Usando el tamaño de Subtítulo (20px) o el de Título si prefieres */
+.tarjeta-producto h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* División: different wide - 1px (de tus átomos) */
+.tarjeta-producto hr {
+    border: none;
+    border-top: 1px solid #57626B; /* Gris de la guía */
+    opacity: 0.3; /* Para que sea suave como en el diseño */
+}
