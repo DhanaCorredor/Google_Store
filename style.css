@@ -11,19 +11,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* el root se usa como un almacen central. donde están las variables comunes en todo el documento
 solo guarda la información para no volver escribirlo.*/
-:root{
-    --color-principal:#ffffff;
-    --color-secundario:#F8F9FA;
-    --color-fuente:#1f1f1f;
-    --color-hover:#1A73E8;
+:root {
+    --color-principal: #ffffff;
+    --color-secundario: #F8F9FA;
+    --color-fuente: #1f1f1f;
+    --color-hover: #1A73E8;
     --fuente-inter: 'Inter', sans-serif;
-    --espaciado-header: 1rem 2rem; /* Arriba/Abajo y Lados */
+    --espaciado-header: 1rem 2rem;
+    /* Arriba/Abajo y Lados */
 }
 
+/* Los puntitos se quitan aquí */
 ul {
-    list-style: none; /* Los puntitos se quitan aquí */
+    list-style: none;
     padding: 0;
     margin: 0;
 }
@@ -35,254 +38,291 @@ ul a {
 
 /* HEADER BASE (MÓVIL) */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: var(--espaciado-header);
-  background-color:var(var(--color-principal));
-  border-bottom: 1px solid var(--color-secundario));
-   box-shadow: 0 2px 4px #00000014;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--espaciado-header);
+    background-color: var(--color-principal);
+    border-bottom: 2px solid var(--color-secundario);
+    box-shadow: 0 2px 4px #00000014;
 }
+
 nav {
     width: 100%;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     text-decoration: none;
 }
 
 /* El logo de Google a la izquierda */
 .google-logo img {
-  height: 24px;
+    height: 24px;
 }
 
-/* Contenedor de iconos a la derecha,espacios entre los iconso  */
-.nav-icons {
-  display: flex;
-  gap: 15px; 
-  align-items: center;
+/* Contenedor de iconos a la derecha,espacios entre los iconso, class  */
+.nav-icons ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: end;
+    gap: 15px;
+    align-items: center;
 }
 
 /* El menú hamburguesa (las 3 rayitas), lo que se ve en el móvil */
-.menu-toggle {
-  display: block; 
-  font-size: 24px;
-  cursor: pointer;
+.menu-mobile {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
 }
+
 /* Escondemos el menú de texto normal en móvil */
 .nav-links {
-  display: none; 
+    display: none;
 }
+
 .google-logo {
-    height: 32px; 
-    width: auto;   
-    margin-right: 15px; 
+    height: 32px;
+    width: auto;
+    margin-right: 15px;
 }
-.google-logo img{
+
+.google-logo img {
     height: 100%;
     display: block;
 }
+
 /* tamaño ordenador*/
 @media (min-width: 1024px) {
     body {
-    font-family:var(--fuente-inter);
-    line-height: 1.6;
-    font-size: 16px;
-    list-style: none;
-    background-color:var(--color-principal);
-    color:var(--color-fuente);
-    min-height: 100vh;
-    width: 100%;
-}
-header {
-    background-color: var(--color-principal); /* Blanco */
-    height: 68px;
-    display: flex;
-    align-items: center;
-    padding: 0 24px;
-    border-bottom: 1px solid #dfdbdb;
-    box-shadow: 0 2px 4px #00000014;
-}
-nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-}
-/* Contenedor del Logo y el Menú de texto juntos */
-.nav-left {
-    display: flex;
-    align-items: center;
-    gap: 32px; /* Espacio entre logo y el primer link */
-}
-/* Estilo para las listas (ul) */
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px; /* Espacio entre palabras o iconos */
-    margin: 0;
-    padding: 0;
-}
-/* Estilo de los textos (Phones, Earbuds...) */
-nav ul li a {
-    text-decoration: none;
-    color: #5f6368; /* Gris típico de Google */
-    font-size: 14px;
-    font-weight: 500;
-}
-/* El color azul para el item activo (como 'Earbuds' en tu imagen) */
-nav ul li a.active, nav ul li a:hover {
-    color: var(--color-hover); /* El azul #1A73E8 */
-}
-/* Tamaño de los iconos y logo */
-nav img {
-    height: 24px;
-    width: auto;
-    cursor: pointer;
-}
-/* Ajuste del logo para que resalte */
-.google-logo {
-    height: 32px; 
-    width: auto;   
-    margin-right: 15px; 
-}
+        font-family: var(--fuente-inter);
+        line-height: 1.6;
+        font-size: 35px;
+        list-style: none;
+        background-color: var(--color-principal);
+        color: var(--color-fuente);
+        min-height: 100vh;
+        width: 100%;
+    }
 
-/* Mantén los iconos de la derecha en su tamaño estándar */
-.nav-icons img {
-    height: 24px;
-    width: 24px;
-}
-.menu-mobile{
-    display: none;
+    header {
+        background-color: var(--color-principal);
+        /* Blanco */
+        height: 80px;
+        display: flex;
+        align-items: center;
+        padding: 0 24px;
+        border-bottom: 2px solid #dfdbdb;
+        box-shadow: 0 4px 6px #00000014;
+    }
 
-}
-body {
-    /* Usamos la tipografía Inter que pide el profesor */
-    font-family: 'Inter', sans-serif; 
-    background-color: #FFFFFF;
-    color: #353A49; /* Color de texto según tus átomos */
-    padding: 40px;
-}
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-/* --- TU SECCIÓN (TARJETA PRODUCTO) --- */
+    /* Contenedor del Logo y el Menú de texto juntos */
+    .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        /* Espacio entre logo y el primer link */
+    }
 
-.tarjeta-producto {
-    max-width: 450px;
-}
+    /* Estilo para las listas (ul) */
+    nav ul {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        /* Espacio entre palabras o iconos */
+        margin: 0;
+        padding: 0;
+    }
 
-/* Link de retroceso: Text Inter/regular/12px */
-.tarjeta-producto p:first-of-type {
-    font-size: 12px;
-    font-weight: 400;
-    margin-bottom: 30px;
-    color: #57626B; /* Gris intermedio de tus átomos */
-}
+    /* Estilo de los textos (Phones, Earbuds...) */
+    nav ul li a {
+        text-decoration: none;
+        color: #5f6368;
+        /* Gris típico de Google */
+        font-size: 14px;
+        font-weight: 500;
+    }
 
-/* Contenedor de imagen (basado en el Image Container del diagrama) */
-.tarjeta-producto img {
-    display: block;
-    width: 200px; /* Tamaño que tienes en tu HTML */
-    margin: 0 auto 40px auto;
-}
+    /* El color azul para el item activo (como 'Earbuds' en tu imagen) */
+    nav ul li a.active,
+    nav ul li a:hover {
+        color: var(--color-hover);
+        /* El azul #1A73E8 */
+    }
 
-/* Título: Inter/bold/35px */
-.tarjeta-producto h1 {
-    font-size: 35px;
-    font-weight: 700; /* Bold */
-    line-height: 1.2;
-    margin-bottom: 10px;
-    color: #353A49;
-}
+    /* Tamaño de los iconos y logo */
+    nav img {
+        height: 24px;
+        width: auto;
+        cursor: pointer;
+    }
 
-/* Subtítulo (Music & Sound): Inter/bold/20px */
-.tarjeta-producto p:last-of-type {
-    font-size: 20px;
-    font-weight: 700; /* Bold según el átomo de subtítulos */
-    margin-bottom: 25px;
-}
+    /* Ajuste del logo para que resalte */
+  .google-logo {
+        height: 32px;
+        width: auto;
+        margin-right: 15px;
+    }
 
-/* Precio: Usando el tamaño de Subtítulo (20px) o el de Título si prefieres */
-.tarjeta-producto h2 {
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
+    /* Mantén los iconos de la derecha en su tamaño estándar */
+    .nav-icons img {
+        height: 24px;
+        width: 24px;
+    }
 
-/* División: different wide - 1px (de tus átomos) */
-.tarjeta-producto hr {
-    border: none;
-    border-top: 1px solid #57626B; /* Gris de la guía */
-    opacity: 0.3; /* Para que sea suave como en el diseño */
-}
-body {
-    background-color: #F8F9FA;
-}
+    .menu-mobile {
+        display: none;
 
-.class product-card {
-    display: flex;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 16px;
-    margin: 16px;
-    text-align: center;
-}
+    }
+    /*body {
+        /* Usamos la tipografía Inter que pide el profesor */
+        font-family: 'Inter', sans-serif;
+        background-color: #FFFFFF;
+        color: #353A49;
+        /* Color de texto según tus átomos */
+        padding: 40px;
+    }*/
 
-.color-selector legend {
-    font-size: 14px;
-    margin-bottom: 8px;
-}
+    /* --- TU SECCIÓN (TARJETA PRODUCTO) --- */
 
-.color-selector {
-    border: none;
-    display: inline;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 8px;
+    .tarjeta-producto {
+        max-width: 450px;
+    }
 
-}
+    /* Link de retroceso: Text Inter/regular/12px */
+    .tarjeta-producto p:first-of-type {
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 30px;
+        color: #57626B;
+        /* Gris intermedio de tus átomos */
+    }
 
-#cantidad {
-    width: 60px;
-    padding: 4px;
-    margin-top: 8px;
-    margin-bottom: 10px;
-    text-align: center;
-}
+    /* Contenedor de imagen (basado en el Image Container del diagrama) */
+    .tarjeta-producto img {
+        display: block;
+        width: 200px;
+        /* Tamaño que tienes en tu HTML */
+        margin: 0 auto 40px auto;
+    }
 
-button {
-    background-color: #1A73E8;
-    color: white;
-    border: none;
-    padding: 10px 40px;
-    border-radius: 4px;
-    cursor: pointer;
-}
+    /* Título: Inter/bold/35px */
+    .tarjeta-producto h1 {
+        font-size: 35px;
+        font-weight: 700;
+        /* Bold */
+        line-height: 1.2;
+        margin-bottom: 10px;
+        color: #353A49;
+    }
 
-.color {
-    display: inline-block;
-    border-radius: 50%;
-    border: 2px solid #ddd;
-    cursor: pointer;
-    width: 35px;
-    height: 35px;
-}
+    /* Subtítulo (Music & Sound): Inter/bold/20px */
+    .tarjeta-producto p:last-of-type {
+        font-size: 20px;
+        font-weight: 700;
+        /* Bold según el átomo de subtítulos */
+        margin-bottom: 25px;
+    }
 
-/* Colores para los productos */
-.blue {
-    background: #8bb6d9;
-}
-.white {
-    background: #ffffff;
-}
-.black {
-    background: #000000;
-}
-.grey {
-    background: #cfd4d9;
-}   
-.green {
-    background: #dbe3b2;
-}
-.orange {
-    background: #f08063;
-}
+    /* Precio: Usando el tamaño de Subtítulo (20px) o el de Título si prefieres */
+    .tarjeta-producto h2 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    /* División: different wide - 1px (de tus átomos) */
+    .tarjeta-producto hr {
+        border: none;
+        border-top: 1px solid #57626B;
+        /* Gris de la guía */
+        opacity: 0.3;
+        /* Para que sea suave como en el diseño */
+    }
+
+    body {
+        background-color: #F8F9FA;
+    }
+
+    .class product-card {
+        display: flex;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 16px;
+        margin: 16px;
+        text-align: center;
+    }
+
+    .color-selector legend {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .color-selector {
+        border: none;
+        display: inline;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 8px;
+
+    }
+
+    #cantidad {
+        width: 60px;
+        padding: 4px;
+        margin-top: 8px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    button {
+        background-color: #1A73E8;
+        color: white;
+        border: none;
+        padding: 10px 40px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .color {
+        display: inline-block;
+        border-radius: 50%;
+        border: 2px solid #ddd;
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+    }
+
+    /* Colores para los productos */
+    .blue {
+        background: #8bb6d9;
+    }
+
+    .white {
+        background: #ffffff;
+    }
+
+    .black {
+        background: #000000;
+    }
+
+    .grey {
+        background: #cfd4d9;
+    }
+
+    .green {
+        background: #dbe3b2;
+    }
+
+    .orange {
+        background: #f08063;
+    }
