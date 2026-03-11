@@ -12,7 +12,7 @@ Proyecto realizado con ❤️ por:
 ---
 
 ## 🔗 Enlaces del Proyecto
-* **Demo en vivo:** [En construcción](https://dhanacorredor.github.io/Google_Store/) 
+* **Demo en vivo:** [En construcción] 
 * **Wireframe (Baja fidelidad):** [Ver en Figma](https://www.figma.com/proto/uSJ56QLh344kVhfdJwfiBD/Wireframe-de-baja-fidelidad?page-id=2%3A2&node-id=3-7&p=f&viewport=187%2C198%2C0.8&t=sdtCKfvw7EWQvy1b-1&scaling=scale-down&content-scaling=fixed)
 * **Diseño de referencia:** [Figma original (Notion)](https://factoriaf5.notion.site/Google-Store-143e084deeb9800e8190c97f9263de72)
 * **Gestión del Proyecto:** [GitHub Project (Tablero Kanban)](https://github.com/users/DhanaCorredor/projects/3)
