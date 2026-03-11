@@ -1,2 +1,108 @@
 
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* estilos del footer  */
+
+/* ===== FOOTER MOBILE ===== */
+
+.site-footer {
+  background-color: #f1f3f4;
+  padding: 1rem 1.25rem 0.75rem;
+  text-align: center;
+}
+
+.site-redes-sociales {
+  margin-bottom: 0.75rem;
+}
+
+.lista-redes-sociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+.lista-redes-sociales a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+}
+
+.site-footer-politicas {
+  margin-bottom: 0.5rem;
+}
+
+.lista-politicas {
+  margin: 0;
+  padding: 0;
+
+}
+
+.lista-politicas li {
+  margin-bottom: 0.15rem;
+}
+
+.lista-politicas a {
+  font-size: 0.7rem;
+  line-height: 1.2;
+  color: #5f6368;
+ 
+}
+
+.lista-politicas a:hover {
+  text-decoration: underline;
+}
+
+.site-pais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.7rem;
+  color: #5f6368;
+}
+
+.icon-bandera {
+  width: 1.4rem;
+  height: auto;
+  display: block;
+}
