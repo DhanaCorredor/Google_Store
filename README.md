@@ -1,12 +1,20 @@
-## 🛒 Google Store Clone - Factoría F5
+# 🛒 Google Store Clone - Factoría F5
 
 Este proyecto es una réplica detallada de la interfaz de la **Google Store**, desarrollada como parte del proceso de aprendizaje en el bootcamp de **Factoría F5**. El objetivo es aplicar estándares profesionales de maquetación, organización de código y metodologías de trabajo ágiles.
+
+## 👩‍💻 Equipo de Desarrollo (Coders)
+Proyecto realizado con ❤️ por:
+* **Yasira Gonzáles** - [@yasiragarg](https://github.com/yasiragarg)
+* **Dhana Corredor** - [@dhanacorredor](https://github.com/dhanacorredor)
+* **Doris Guerra** - [@dorisguerra68](https://github.com/dorisguerra68)
+* **Irina Díaz** - [@irinadiaz22](https://github.com/irinadiaz22)
 
 ---
 
 ## 🔗 Enlaces del Proyecto
-* **Demo en vivo:** [Ver en GitHub Pages](https://dhanacorredor.github.io/Google_Store/) 
-* **Diseño de referencia:** [Figma del Proyecto](https://factoriaf5.notion.site/Google-Store-143e084deeb9800e8190c97f9263de72)
+* **Demo en vivo:** [En construcción](https://dhanacorredor.github.io/Google_Store/) 
+* **Wireframe (Baja fidelidad):** [Ver en Figma](https://www.figma.com/proto/uSJ56QLh344kVhfdJwfiBD/Wireframe-de-baja-fidelidad?page-id=2%3A2&node-id=3-7&p=f&viewport=187%2C198%2C0.8&t=sdtCKfvw7EWQvy1b-1&scaling=scale-down&content-scaling=fixed)
+* **Diseño de referencia:** [Figma original (Notion)](https://factoriaf5.notion.site/Google-Store-143e084deeb9800e8190c97f9263de72)
 * **Gestión del Proyecto:** [GitHub Project (Tablero Kanban)](https://github.com/users/DhanaCorredor/projects/3)
 
 ---
