@@ -43,8 +43,9 @@ Proyecto realizado con ❤️ por:
 - **Variables:** Implementación de variables CSS para facilitar el mantenimiento.
 
 ### 👥 Metodología Agile (SCRUM)
-Hemos gestionado el desarrollo mediante **GitHub Projects**:
-- **Backlog:** Listado priorizado de tareas pendientes extraídas de los requisitos.
-- **Tablero Kanban:** Gestión visual del flujo de trabajo (To Do, In Progress, Done).
-- **Ceremonias:** Reuniones diarias (Daily) para coordinar el trabajo del equipo.
-- **Roles:** Participación activa de todo el equipo en las diferentes fases del proyecto.
+Hemos gestionado el desarrollo utilizando **SCRUM** y un tablero **Kanban** en **GitHub Projects**:
+
+* **Product Backlog:** Listado inicial de todos los requisitos del proyecto.
+* **Gestión Visual (Kanban):** Organización de tareas en columnas (*Backlog, In Progress, Review, Done*) para optimizar el flujo de trabajo.
+* **Daily Meetings:** Sincronizaciones diarias para comunicar avances y resolver bloqueos.
+* **Colaboración:** Reparto equitativo de roles y revisión de código entre compañeras para asegurar la calidad y el cumplimiento de los estándares establecidos.
