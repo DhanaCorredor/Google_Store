@@ -5,31 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google Store</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- Es la fuente que se debe añadir a nuestro index.html> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com" rel="stylesheet">
+
   </head>
   <body>
     <header>
       <nav>
         <!--logo-->
-        <a><img src="#" alt="Logo Google" /></a>
+        <div class="google-logo">
+            <a><img src="/img/google-logo.png" alt="Logo Google"></a>
+        </div>
         <!--Menú-->
-        <ul>
+        <ul class="nav-links">
           <li><a href="#">Phones</a></li>
           <li><a href="#">Earbuds</a></li>
           <li><a href="#">Watches</a></li>
           <li><a href="#">Smart Home</a></li>
           <li><a href="#">Accesories</a></li>
-          <li><a href="#">Subscriptions</a></li>
+          <li><a href="#">Subscriptions</a></li> 
         </ul>
         <!--Iconos de Acción-->
+        <div class="nav-icons">
         <ul>
-          <li><a href="#">icono_lupa</a></li>
-          <li><a href="#">icono_preguntas</a></li>
-          <li><a href="#">icono_carrito de compras</a></li>
-          <li><a href="#">icono_usuario</a></li>
+          <li><a href="#" >
+          <img src="/img/icons/Search.svg" alt="serch,busqueda">  
+          </a></li>
+          <li><a href="#">
+            <img src="/img/icons/Help.svg" alt="Help,Ayuda">
+          </a></li>
+          <li><a href="#">
+            <img src="/img/icons/Cart.svg" alt="Cart,carrito de compra">
+          </a></li>
+          <li><a href="#">
+            <img src="/img/icons/Avatar.svg" alt="User,Usuario"></a></li>
         </ul>
-        <!este icono se usará en tamaño de móvil>
-        <ul>
-          <li>icono de menu</li>
+        </div>
+        <!--este icono se usará en tamaño de móvil-->
+        <ul class="menu-mobile">
+          <li><img src="/img/icons/menu-icon1.svg" alt="menu"></li>
         </ul>
       </nav>
     </header>
