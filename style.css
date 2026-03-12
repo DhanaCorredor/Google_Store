@@ -175,3 +175,74 @@ body {
 
 }
 /* fin de estilos de footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para pantallas medianas y grandes (768px en adelante) YASIRA */
+@media (min-width: 768px) {
+
+.site-footer {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-redes-sociales {
+  flex-direction: row;
+  gap: 20px;
+}
+
+}
+@media (min-width: 1024px) {
+
+footer {
+  padding: 40px 80px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-links {
+  gap: 40px;
+}
+
+}
