@@ -7,7 +7,6 @@
   <title>Google Store</title>
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css" />
-  <!-- Es la fuente que se debe añadir a nuestro index.html> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com" rel="stylesheet">
@@ -18,11 +17,9 @@
 <body>
   <header>
     <nav>
-      <!--logo-->
       <div class="google-logo">
         <a><img src="/img/google-logo.png" alt="Logo Google"></a>
       </div>
-      <!--Menú-->
       <ul class="nav-links">
         <li><a href="#">Phones</a></li>
         <li><a href="#">Earbuds</a></li>
@@ -32,7 +29,6 @@
         <li><a href="#">Subscriptions</a></li>
       </ul>
 
-      <!--Iconos de Acción-->
       <div class="nav-icons">
         <ul>
           <li><a href="#">
@@ -48,7 +44,6 @@
               <img src="/img/icons/Avatar.svg" alt="User,Usuario"></a></li>
         </ul>
       </div>
-      <!--este icono se usará en tamaño de móvil-->
       <ul class="menu-mobile">
         <li><img src="/img/icons/menu-icon1.svg" alt="menu"></li>
       </ul>
@@ -56,7 +51,6 @@
   </header>
 
   <main>
-    <!--section 1-->
     <section>
       <div class="tarjeta-producto">
         <p>← See product details</p>
@@ -68,8 +62,7 @@
       </div>
     </section>
 
-    <!--section 2-->
-<section class="product-card">
+    <section class="product-card">
       <form>
         <fieldset class="color-selector">
           <legend>Choose a color</legend>
@@ -98,18 +91,17 @@
             <span class="color orange"></span>
           </label>
         </fieldset>
-        
+
         <h2>229 €</h2>
-        
-        <select name="Cantidad" id="cantidad" aria-label="Seleccionar cantidad">
+        <hr> <select name="Cantidad" id="cantidad" aria-label="Seleccionar cantidad">
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
         </select>
-        
+
         <button type="submit">Add to Cart</button>
       </form>
-      
+
       <footer class="delivery">
         <p>
           Delivers <time datetime="2024-04-20"> 20 Apr </time> to
@@ -118,11 +110,8 @@
       </footer>
     </section>
   </main>
-  <!-- INICIO footer-->
-
   <footer class="site-footer">
 
-    <!-- REDES SOCIALES -->
     <div class="site-redes-sociales">
       <ul class="lista-redes-sociales">
         <li>
@@ -153,7 +142,6 @@
       </ul>
     </div>
 
-    <!-- POLÍTICAS -->
     <nav class="site-footer-politicas" aria-label="Políticas del sitio">
       <ul class="lista-politicas">
         <li><a href="#">Privacy</a></li>
@@ -163,7 +151,6 @@
       </ul>
     </nav>
 
-    <!-- PAÍS -->
     <div class="site-pais">
       <a href="#" aria-label="País seleccionado: España">
         <img src="img/icons/Spain.svg" alt="Bandera de España" class="icon-bandera">
@@ -172,9 +159,6 @@
     </div>
 
   </footer>
-  <!-- FIN FOOTER -->
-
-
-</body>
+  </body>
 
 </html>
