@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google Store</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css" />
     <!-- Es la fuente que se debe añadir a nuestro index.html> -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,6 +28,7 @@
           <li><a href="#">Accesories</a></li>
           <li><a href="#">Subscriptions</a></li> 
         </ul>
+
         <!--Iconos de Acción-->
         <div class="nav-icons">
         <ul>
@@ -50,148 +52,171 @@
       </nav>
     </header>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Google Store</title>
+
+  <link rel="stylesheet" href="normalize.css">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <!--logo-->
+      <a><img src="#" alt="Logo Google" /></a>
+      <!--Menú-->
+      <ul>
+        <li><a href="#">Phones</a></li>
+        <li><a href="#">Earbuds</a></li>
+        <li><a href="#">Watches</a></li>
+        <li><a href="#">Smart Home</a></li>
+        <li><a href="#">Accesories</a></li>
+        <li><a href="#">Subscriptions</a></li>
+      </ul>
+      <!--Iconos de Acción-->
+      <ul>
+        <li><a href="#">icono_lupa</a></li>
+        <li><a href="#">icono_preguntas</a></li>
+        <li><a href="#">icono_carrito de compras</a></li>
+        <li><a href="#">icono_usuario</a></li>
+      </ul>
+      <!--este icono se usará en tamaño de móvil-->
+      <ul>
+        <li>icono de menu</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!--section 1-->
     <main>
-    <section>
-<div class="tarjeta-producto">
-    <p>← See product details</p>
-    <img src="img/earbuds/earbuds_01.png" alt="Auriculares" width="200">
-    <h1>Google Pixel Buds Pro</h1>
-    <p>Music & Sound</p>
-    <h2>229 €</h2>
-    <hr>
-</div>
-    </section>
-    
-
-
-  <!--section 2-->
-      <section class="product-card">
-        <form>
-          <fieldset class="color-selector">
-            <legend>Choose a color</legend>
-            <label>
-              <input type="radio" name="color" value="blue" />
-              <span class="color blue"></span>
-            </label>
-            <label>
-              <input type="radio" name="color" value="white" />
-              <span class="color white"></span>
-            </label>
-            <label>
-              <input type="radio" name="color" value="black" />
-              <span class="color black"></span>
-            </label>
-            <label>
-              <input type="radio" name="color" value="grey" />
-              <span class="color grey"></span>
-            </label>
-            <label>
-              <input type="radio" name="color" value="green" />
-              <span class="color green"></span>
-            </label>
-            <label>
-              <input type="radio" name="color" value="orange" />
-              <span class="color orange"></span>
-            </label>
-          </fieldset>
+      <section>
+        <div class="tarjeta-producto">
+          <p>← See product details</p>
+          <img src="img/earbuds/earbuds_01.png" alt="Auriculares" width="200">
+          <h1>Google Pixel Buds Pro</h1>
+          <p>Music & Sound</p>
           <h2>229 €</h2>
-          <select name="Cantidad" id="cantidad">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-          </select>
-          <button type="submit">Add to Cart</button>
-        </form>
-        <footer class="delivery">
-          <p>
-            Delivers <time datetime="2024-04-20"> 20 Apr </time> to
-            <strong>08023</strong>
-          </p>
-        </footer>
+          <hr>
+        </div>
       </section>
+
+
+
+      <!--section 2-->
+        <section class="product-card">
+          <form>
+            <fieldset class="color-selector">
+              <legend>Choose a color</legend>
+              <label>
+                <input type="radio" name="color" value="blue" />
+                <span class="color blue"></span>
+              </label>
+              <label>
+                <input type="radio" name="color" value="white" />
+                <span class="color white"></span>
+              </label>
+              <label>
+                <input type="radio" name="color" value="black" />
+                <span class="color black"></span>
+              </label>
+              <label>
+                <input type="radio" name="color" value="grey" />
+                <span class="color grey"></span>
+              </label>
+              <label>
+                <input type="radio" name="color" value="green" />
+                <span class="color green"></span>
+              </label>
+              <label>
+                <input type="radio" name="color" value="orange" />
+                <span class="color orange"></span>
+              </label>
+            </fieldset>
+            <h2>229 €</h2>
+            <select name="Cantidad" id="cantidad">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <button type="submit">Add to Cart</button>
+          </form>
+          <footer class="delivery">
+            <p>
+              Delivers <time datetime="2024-04-20"> 20 Apr </time> to
+              <strong>08023</strong>
+            </p>
+          </footer>
+        </section>
     </main>
 
-     <!-- INICIO footer-->
-<footer>
+    <!-- INICIO footer-->
 
-  <div class="padding-vertical">
-    <div class="grid alinear-space-between ancho-maximo">
+    <footer class="site-footer">
 
       <!-- REDES SOCIALES -->
-      <div class="redes_sociales">
-
-        <ul class="grid alinear-izquierda">
-
-          <li>
-            <a href="#" aria-label="Facebook">
-              <img src="imagenes/icon_facebook.png" alt="Facebook" class="icon">
-            </a>
-          </li>
-
-          <li>
-            <a href="#" aria-label="Instagram">
-              <img src="imagenes/icon_instagram.png" alt="Instagram" class="icon">
-            </a>
-          </li>
-
+      <div class="site-redes-sociales">
+        <ul class="lista-redes-sociales">
           <li>
             <a href="#" aria-label="X">
-              <img src="imagenes/icon_x.png" alt="X" class="icon">
+              <img src="img/icons/SM-x.svg" alt="X" class="icon">
             </a>
           </li>
-
+          <li>
+            <a href="#" aria-label="Instagram">
+              <img src="img/icons/SM-instagram.svg" alt="Instagram" class="icon">
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Facebook">
+              <img src="img/icons/SM-facebook.svg" alt="Facebook" class="icon">
+            </a>
+          </li>
           <li>
             <a href="#" aria-label="YouTube">
-              <img src="imagenes/icon_youtube.png" alt="YouTube" class="icon">
+              <img src="img/icons/SM-youtube.svg" alt="YouTube" class="icon">
             </a>
           </li>
-
           <li>
             <a href="#" aria-label="TikTok">
-              <img src="imagenes/icon_tiktok.png" alt="TikTok" class="icon">
+              <img src="img/icons/SM-tiktok.svg" alt="TikTok" class="icon">
             </a>
           </li>
-
         </ul>
-
       </div>
-
-
-      <!-- PAÍS -->
-      <div class="grid alinear-centro footer-pais">
-
-        <img src="imagenes/flag_spain.png" alt="Bandera España" class="icon-bandera">
-
-        <p>Spain</p>
-
-      </div>
-
 
       <!-- POLÍTICAS -->
-      <nav class="footer-politicas">
-
-        <ul class="grid alinear-derecha">
-
+      <nav class="site-footer-politicas" aria-label="Políticas del sitio">
+        <ul class="lista-politicas">
           <li><a href="#">Privacy</a></li>
-
-          <li><a href="#">
-            Google Nest Commitment to Privacy
-          </a></li>
-
+          <li><a href="#">Google Nest Commitment to Privacy</a></li>
           <li><a href="#">Sales Terms</a></li>
-
           <li><a href="#">Terms of Service</a></li>
-
         </ul>
-
       </nav>
 
-    </div>
-  </div>
+      <!-- PAÍS -->
+      <div class="site-pais">
+        <a href="#" aria-label="País seleccionado: España">
+          <img src="img/icons/Spain.svg" alt="Bandera de España" class="icon-bandera">
+        </a>
+        <span>Spain</span>
+      </div>
 
-</footer>
+    </footer>
+    <!-- FIN FOOTER -->
 
+<<<<<<< HEAD
     <!-- FIN footer final -->
      
   </body>
 </html>
+=======
+
+</body>
+
+</html>
+>>>>>>> 6a763791a1eae87d8f39bd6c6466294f556b0ed1
