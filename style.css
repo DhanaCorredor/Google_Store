@@ -39,7 +39,9 @@ header nav {
     justify-content: space-between;
     align-items: center;
     padding: 12px 20px;
-    background-color: var(--white);
+    background-color: var(--white)
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8)
+
 }
 
 .google-logo img {
