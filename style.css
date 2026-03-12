@@ -183,15 +183,15 @@ nav {
         display: none;
 
     }
-    /*body {
+    body {
         /* Usamos la tipografía Inter que pide el profesor */
-        font-family: 'Inter', sans-serif;
+        font-family: 'Inter', sans-serif; 
         background-color: #FFFFFF;
         color: #353A49;
         /* Color de texto según tus átomos */
         padding: 40px;
-    }*/
-
+    }
+}
     /* --- TU SECCIÓN (TARJETA PRODUCTO) --- */
 
     .tarjeta-producto {
