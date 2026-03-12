@@ -1,168 +1,175 @@
-/* --- RESET / NORMALIZE BASADO EN ATOMS --- */
+/* ============================================================
+   1.Base común para toda la página - Responsabilidad: TODO EL EQUIPO
+    Variables de color, tipografía y estilos globales
+   ============================================================ */
+:root {
+    --white: #FFFFFF;
+    --light-grey: #F8F9FA;
+    --medium-grey: #57626B;
+    --dark-grey: #353A49;
+    --google-blue: #1A73E8;
+    --font-main: 'Inter', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 body {
-    /* Usamos la tipografía Inter que pide el profesor */
-    font-family: 'Inter', sans-serif; 
-    background-color: #FFFFFF;
-    color: #353A49; /* Color de texto según tus átomos */
-    padding: 40px;
-}
-/*procedimiento fundamental para modificar los margenes, y padding es el reset*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: var(--font-main);
+    background-color: var(--white);
+    color: var(--dark-grey);
+    line-height: 1.4;
 }
 
-/* el root se usa como un almacen central. donde están las variables comunes en todo el documento
-solo guarda la información para no volver escribirlo.*/
-:root {
-    --color-principal: #ffffff;
-    --color-secundario: #F8F9FA;
-    --color-fuente: #1f1f1f;
-    --color-hover: #1A73E8;
-    --fuente-inter: 'Inter', sans-serif;
-    --espaciado-header: 1rem 2rem;
-    /* Arriba/Abajo y Lados */
-}
-
-/* Los puntitos se quitan aquí */
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-ul a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* HEADER BASE (MÓVIL) */
+/* ============================================================
+   2. BARRA DE NAVEGACIÓN - DORIS GUERRA
+   ============================================================ */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--espaciado-header);
-    background-color: var(--color-principal);
-    border-bottom: 2px solid var(--color-secundario);
-    box-shadow: 0 2px 4px #00000014;
+    padding: 12px 20px;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--light-grey);
 }
 
-nav {
-    width: 100%;
+.nav-logo img {
+    height: 24px; /* Tamaño del átomo de Logo */
+}
+
+.nav-icons {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-}
-
-/* El logo de Google a la izquierda */
-.google-logo img {
-    height: 24px;
-}
-
-/* Contenedor de iconos a la derecha,espacios entre los iconso, class  */
-.nav-icons ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    justify-content: end;
     gap: 15px;
     align-items: center;
 }
 
-/* El menú hamburguesa (las 3 rayitas), lo que se ve en el móvil */
-.menu-mobile {
-    display: block;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-/* Escondemos el menú de texto normal en móvil */
+/* El menú de texto se oculta en móvil (lo activará la otra compañera en Desktop) */
 .nav-links {
     display: none;
 }
 
-.google-logo {
-    height: 32px;
-    width: auto;
-    margin-right: 15px;
+/* ============================================================
+   3. CUERPO (PRODUCTO PARTE 1) - DHANA CORREDOR
+   Títulos, Subtítulos y Contenedor de Imagen
+   ============================================================ */
+.product-main-info {
+    padding: 20px;
+    text-align: left;
 }
 
-.google-logo img {
-    height: 100%;
+.breadcrumb {
+    font-size: 12px; /* Text: Inter/regular/12px */
+    color: var(--medium-grey);
+    margin-bottom: 20px;
+    text-decoration: none;
     display: block;
 }
 
-/* División: different wide - 1px (de tus átomos) */
-.tarjeta-producto hr {
+.image-container {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.product-title {
+    font-size: 35px; /* Titles: Inter/bold/35px */
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.product-subtitle {
+    font-size: 20px; /* Subtitles: Inter/bold/20px */
+    font-weight: 700;
+    color: var(--medium-grey);
+}
+
+/* ============================================================
+   4. INTERACCIÓN Y COLORES - IRINA DIAZ
+   Selectores de color, Precio y Botón "Add to Cart"
+   ============================================================ */
+.purchase-section {
+    padding: 0 20px 20px;
+}
+
+.price-display {
+    font-size: 35px; /* Usamos tamaño de título para el precio resaltado */
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.divider {
     border: none;
-    border-top: 1px solid #57626B; /* Gris de la guía */
-    opacity: 0.3; /* Para que sea suave como en el diseño */
+    border-top: 1px solid var(--medium-grey); /* Division: 1px */
+    opacity: 0.3;
+    margin: 20px 0;
 }
 
-/* estilos del footer  */
+.color-selector-container {
+    margin: 20px 0;
+}
 
-/* ===== FOOTER MOBILE ===== */
+.color-dots-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
 
+.dot {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+/* Colores específicos de los átomos */
+.dot.blue { background-color: #8bb6d9; }
+.dot.white { background-color: #ffffff; }
+.dot.black { background-color: #000000; }
+
+.btn-add-cart {
+    background-color: var(--google-blue);
+    color: var(--white);
+    width: 100%; /* Botón full-width para móvil */
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+/* ============================================================
+   5. PIE DE PÁGINA (FOOTER) - YASIRA
+   Redes sociales, políticas y país
+   ============================================================ */
 .site-footer {
-  background-color: #f1f3f4;
-  padding: 1rem 1.25rem 0.75rem;
-  text-align: center;
+    background-color: var(--light-grey);
+    padding: 30px 20px;
+    text-align: center;
 }
 
-.site-redes-sociales {
-  margin-bottom: 0.75rem;
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
 }
 
-.lista-redes-sociales {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.25rem;
-  margin: 0;
-  padding: 0;
- 
+.footer-links-list {
+    list-style: none;
+    font-size: 8px; /* Footer text: Inter/regular/8px */
+    color: var(--medium-grey);
 }
 
 .lista-redes-sociales a {
@@ -219,30 +226,6 @@ nav {
 
 }
 /* fin de estilos de footer */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
