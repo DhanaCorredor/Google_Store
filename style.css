@@ -1,159 +1,229 @@
 /* ============================================================
-   1. BASE (Todo el equipo)
-   Configuración sencilla para que la letra y colores se vean bien.
+   1. BASE - TODO EL EQUIPO
    ============================================================ */
 :root {
-    --blanco: #FFFFFF;
-    --gris-claro: #F8F9FA;
-    --gris-medio: #57626B;
-    --gris-oscuro: #353A49;
-    --azul-google: #1A73E8;
+    --white: #FFFFFF;
+    --light-grey: #F8F9FA;
+    --medium-grey: #57626B;
+    --dark-grey: #353A49;
+    --google-blue: #1A73E8;
+    --font-main: 'Inter', sans-serif;
 }
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Para que el padding no estire las cajas */
+    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    color: var(--gris-oscuro);
-    background-color: var(--blanco);
+    font-family: var(--font-main);
+    background-color: var(--white);
+    color: var(--dark-grey);
+    line-height: 1.4;
 }
 
 /* ============================================================
-   2. BARRA DE NAVEGACIÓN (Doris Guerra)
-   Uso de Flexbox para poner el logo a un lado y los iconos al otro.
+   2. NAVEGACIÓN - DORIS GUERRA
    ============================================================ */
-header {
+header nav {
     display: flex;
-    justify-content: space-between; /* Logo a la izquierda, iconos a la derecha */
+    justify-content: space-between;
     align-items: center;
-    padding: 15px;
-    border-bottom: 1px solid var(--gris-claro);
+    padding: 12px 20px;
+    background-color: var(--white);
 }
 
 .google-logo img {
-    height: 24px; /* Tamaño pequeño según los átomos */
+    height: 24px;
+}
+
+.nav-icons ul {
+    display: flex;
+    list-style: none; /* Limpieza de puntos */
+    gap: 15px;
 }
 
 .nav-icons img {
-    height: 24px;
-    margin-left: 15px; /* Espacio entre los iconos */
+    width: 20px;
 }
 
+/* Estado inicial: ocultamos links y mostramos hamburguesa */
 .nav-links {
-    display: none; /* En móvil no mostramos el menú de texto */
+    display: none;
+}
+
+.menu-mobile {
+    display: block; 
+    list-style: none;
 }
 
 /* ============================================================
-   3. IMAGEN Y TEXTOS (Dhana Corredor)
-   Centrar la imagen y dar tamaño a los títulos.
+   3. CUERPO Y PRODUCTO - DHANA CORREDOR / IRINA DIAZ
    ============================================================ */
-.product-main-info {
+.tarjeta-producto {
     padding: 20px;
+    text-align: left;
 }
 
-.breadcrumb {
+.tarjeta-producto p:first-of-type {
     font-size: 12px;
-    color: var(--gris-medio);
-    text-decoration: none;
+    color: var(--medium-grey);
     margin-bottom: 20px;
+}
+
+.tarjeta-producto img {
     display: block;
+    margin: 0 auto 20px;
+    max-width: 100%;
 }
 
-.image-container img {
-    width: 100%;       /* Para que la imagen se adapte al móvil */
-    max-width: 250px;  /* Pero que no se haga gigante */
-    display: block;
-    margin: 0 auto 30px auto; /* Centrada con espacio abajo */
+h1 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 8px;
 }
 
-.product-title {
-    font-size: 35px; /* Tamaño exacto de los átomos */
-    margin-bottom: 10px;
+.tarjeta-producto p:last-of-type {
+    font-size: 12px;
+    color: var(--medium-grey);
 }
 
-.product-subtitle {
+h2 {
     font-size: 20px;
-    color: var(--gris-medio);
+    font-weight: 700;
+    margin: 15px 0;
 }
 
-/* ============================================================
-   4. COLORES Y BOTÓN (Irina Diaz)
-   Crear los círculos de colores y el botón azul llamativo.
-   ============================================================ */
-.purchase-section {
-    padding: 20px;
+hr {
+    border: none;
+    border-top: 1px solid var(--medium-grey);
+    opacity: 0.3;
 }
 
-.divider {
-    border: 0.5px solid var(--gris-medio);
-    opacity: 0.2;
+/* Selectores de Color e Interacción */
+.color-selector {
+    border: none;
     margin: 20px 0;
 }
 
-/* Estilo para los círculos de colores */
-.dot {
+.color-selector legend {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.color {
     display: inline-block;
     width: 30px;
     height: 30px;
-    border-radius: 50%; /* Esto hace que sea un círculo */
+    border-radius: 50%;
     border: 1px solid #ddd;
-    margin-right: 10px;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
 }
 
+.color:hover {
+    transform: scale(1.1);
+}
+
+/* Colores específicos */
 .blue { background-color: #8bb6d9; }
 .white { background-color: #ffffff; }
 .black { background-color: #000000; }
+.grey { background-color: #57626B; }
+.green { background-color: #AECBFA; }
+.orange { background-color: #F28B82; }
 
-.btn-add-cart {
-    background-color: var(--azul-google);
-    color: white;
-    width: 100%; /* Botón grande y fácil de tocar en móvil */
+input[type="radio"] {
+    display: none;
+}
+
+/* Feedback visual al seleccionar color */
+input[type="radio"]:checked + .color {
+    outline: 2px solid var(--google-blue);
+    outline-offset: 2px;
+}
+
+#cantidad {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--medium-grey);
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+button[type="submit"] {
+    background-color: var(--google-blue);
+    color: var(--white);
+    width: 100%;
     padding: 15px;
     border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: 20px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
 }
 
 /* ============================================================
-   5. PIE DE PÁGINA (Yasira)
-   Centrar todo y poner las redes sociales.
+   4. FOOTER MOBILE
    ============================================================ */
 .site-footer {
-    background-color: var(--gris-claro);
-    padding: 30px;
+    background-color: #f1f3f4;
+    padding: 1rem 1.25rem 0.75rem;
     text-align: center;
 }
 
-.social-icons img {
-    width: 25px;
-    margin: 0 10px 20px 10px; /* Espacio alrededor de los iconos */
+.site-redes-sociales {
+    margin-bottom: 0.75rem;
 }
 
+.lista-redes-sociales, 
 .lista-politicas {
-    list-style: none; /* Quita los puntitos de la lista */
-    font-size: 8px;   /* Tamaño muy pequeño según átomos */
-    margin-bottom: 20px;
-}
-
-.lista-politicas a {
-    text-decoration: none;
-    color: var(--gris-medio);
-    margin: 5px;
-}
-
-.site-pais {
-    font-size: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    list-style: none; /* Quitamos los puntos de lista */
+    margin: 0;
+    padding: 0;
+}
+
+.lista-redes-sociales {
+    gap: 1.25rem;
+}
+
+.lista-politicas {
+    flex-direction: column; /* Apilados en móvil */
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.lista-redes-sociales a,
+.lista-politicas a {
+    text-decoration: none;
+    color: #5f6368;
+    font-size: 0.7rem;
+}
+
+.icon {
+    width: 2rem;
+    height: 2rem;
+    display: block;
+}
+
+.site-pais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.7rem;
+    color: #5f6368;
+    margin-top: 10px;
 }
 
 .icon-bandera {
-    width: 15px;
+    width: 1.4rem;
+    height: auto;
 }
