@@ -24,8 +24,12 @@ body {
 }
 
 section {
-    padding: 20px;
+    padding-top: none;
+    padding-bottom: none;
+    padding-left: 20px;
+    padding-right: 20px;
 }
+
 
 /* ============================================================
    2. NAVEGACIÓN - DORIS GUERRA
