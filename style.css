@@ -312,7 +312,7 @@ nav {
     }
 
     /* Ajuste del logo para que resalte */
-  .google-logo {
+.google-logo {
         height: 32px;
         width: auto;
         margin-right: 15px;
@@ -326,8 +326,8 @@ nav {
 
     .menu-mobile {
         display: none;
-
     }
+
     /*body {
         /* Usamos la tipografía Inter que pide el profesor */
         font-family: 'Inter', sans-serif;
@@ -335,4 +335,5 @@ nav {
         color: #353A49;
         /* Color de texto según tus átomos */
         padding: 40px;
-    }*/
+        }*/                 
+}
