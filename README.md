@@ -4,7 +4,7 @@ Este proyecto es una réplica detallada de la interfaz de la **Google Store**, d
 
 ## 👩‍💻 Equipo de Desarrollo (Coders)
 Proyecto realizado con ❤️ por:
-* **Yasira Gonzáles** - [@yasiragarg](https://github.com/yasiragarg)
+* **Yasira Gonzáles** - [@yasirag](https://github.com/yasirag)
 * **Dhana Corredor** - [@dhanacorredor](https://github.com/dhanacorredor)
 * **Doris Guerra** - [@dorisguerra68](https://github.com/dorisguerra68)
 * **Irina Díaz** - [@irinadiaz22](https://github.com/irinadiaz22)
@@ -12,7 +12,7 @@ Proyecto realizado con ❤️ por:
 ---
 
 ## 🔗 Enlaces del Proyecto
-* **Demo en vivo:** [En construcción] 
+* **Demo en vivo:** [Github Pages](https://dhanacorredor.github.io/Google_Store/index.html#) 
 * **Wireframe (Baja fidelidad):** [Ver en Figma](https://www.figma.com/proto/uSJ56QLh344kVhfdJwfiBD/Wireframe-de-baja-fidelidad?page-id=2%3A2&node-id=3-7&p=f&viewport=187%2C198%2C0.8&t=sdtCKfvw7EWQvy1b-1&scaling=scale-down&content-scaling=fixed)
 * **Wireframe (Alta fidelidad):**  [Ver en Figma](https://www.figma.com/proto/Ce1uLU9K7GVLCGS8plmpLQ/wireframe-baja-fidalidad?page-id=53%3A2&node-id=53-3&p=f&viewport=93%2C20%2C0.71&t=3EgOpoUX3VaGJOww-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=53%3A3)
 * **Diseño de referencia:** [Figma original (Notion)](https://factoriaf5.notion.site/Google-Store-143e084deeb9800e8190c97f9263de72)
