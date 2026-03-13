@@ -2,6 +2,7 @@
    TABLET
    ============================================================ */
 @media (min-width: 768px) {
+
   /* HEADER */
   header nav {
     padding: 14px 24px;
@@ -151,12 +152,17 @@
     margin-top: 0;
     white-space: nowrap;
   }
+    .icon {
+    width: 1rem;
+    height: 1rem;
+  }
 }
 
 /* ============================================================
    DESKTOP
    ============================================================ */
 @media (min-width: 1024px) {
+
   /* HEADER */
   header nav {
     padding: 16px 32px;
@@ -198,6 +204,12 @@
     display: inline-block;
   }
 
+  .galleria-imagenes img {
+    width: 70rem;
+    height: 70rem;
+    border-radius:50%;
+    border:2px solid #100101;
+}
   .product-card {
     grid-column: 2;
     margin: 40px 0 0;
@@ -267,4 +279,10 @@
   .lista-politicas a {
     font-size: 0.75rem;
   }
+
+  .icon {
+    width: 1rem;
+    height: 1rem;
+  }
+
 }
