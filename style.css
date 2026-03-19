@@ -1,339 +1,270 @@
-/* --- RESET / NORMALIZE BASADO EN ATOMS --- */
+/* ============================================================
+   1. BASE - TODO EL EQUIPO
+   ============================================================ */
+:root {
+    --white: #FFFFFF;
+    --light-grey: #F8F9FA;
+    --medium-grey: #57626B;
+    --dark-grey: #353A49;
+    --google-blue: #1A73E8;
+    --font-main: 'Inter', sans-serif;
+}
 
-
-/*procedimiento fundamental para modificar los margenes, y padding es el reset*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    width: 100%; /* Ocupa todo el ancho */
-    margin: 0;   /* Elimina márgenes por defecto del navegador */
-    padding: 0;  /* Elimina espaciado interior por defecto */
-    min-height: 100vh; /* Asegura al menos la altura de la pantalla */
-    box-sizing: border-box; /* Incluye padding en el ancho total */
-    overflow-x: hidden; /* Evita scroll horizontal innecesario */
-    font-size: 16px; /* Tamaño de fuente base recomendado para lectura */
+    font-family: var(--font-main);
+    background-color: var(--white);
+    color: var(--dark-grey);
+    line-height: 1.4;
 }
 
-/* el root se usa como un almacen central. donde están las variables comunes en todo el documento
-solo guarda la información para no volver escribirlo.*/
-:root {
-    --color-principal: #ffffff;
-    --color-secundario: #F8F9FA;
-    --color-fuente: #1f1f1f;
-    --color-hover: #1A73E8;
-    --fuente-inter: 'Inter', sans-serif;
-    --espaciado-header: 1rem 2rem;
-    /* Arriba/Abajo y Lados */
+section {
+    padding-top: none;
+    padding-bottom: none;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-/* Los puntitos se quitan aquí */
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
 
-ul a {
-    text-decoration: none;
-    color: inherit;
-}
-/* mobile first*/
-/* HEADER BASE (MÓVIL) */
-header {
+/* ============================================================
+   2. NAVEGACIÓN - DORIS GUERRA
+   ============================================================ */
+header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--espaciado-header);
-    background-color: var(--color-principal);
-    border-bottom: 2px solid var(--color-secundario);
-    box-shadow: 0 2px 4px #00000014;
+    padding: 12px 20px;
+    background-color: var(--white);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+
 }
 
-nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-}
-
-/* El logo de Google a la izquierda */
 .google-logo img {
     height: 24px;
 }
 
-/* Contenedor de iconos a la derecha,espacios entre los iconso, class  */
 .nav-icons ul {
     display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    justify-content: end;
+    list-style: none; /* Limpieza de puntos */
     gap: 15px;
-    align-items: center;
 }
 
-/* El menú hamburguesa (las 3 rayitas), lo que se ve en el móvil */
-.menu-mobile {
-    display: block;
-    font-size: 24px;
-    cursor: pointer;
+.nav-icons img {
+    width: 20px;
 }
 
-/* Escondemos el menú de texto normal en móvil */
+/* Estado inicial: ocultamos links y mostramos hamburguesa */
 .nav-links {
     display: none;
 }
 
-.google-logo {
-    height: 32px;
-    width: auto;
-    margin-right: 15px;
+.menu-mobile {
+    display: block; 
+    list-style: none;
 }
 
-.google-logo img {
-    height: 100%;
+/* ============================================================
+   3. CUERPO Y PRODUCTO - DHANA CORREDOR / IRINA DIAZ
+   ============================================================ */
+.tarjeta-producto {
+    text-align: left;
+}
+
+.tarjeta-producto p:first-of-type {
+    font-size: 12px;
+    color: var(--medium-grey);
+    margin-bottom: 20px;
+}
+
+.tarjeta-producto img {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 100%;
+}
+
+/*Cambios Irina para columna de escritorio*/   
+.tarjeta-producto {
+    text-align: left;
+    display: flex;
+}
+
+.image-principal{
+    background-color: #F8F9FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.image-principal img {
+    width: 420px;
+    height: auto;
+}
+.galeria-images {
+    display: none;
+    padding-top: 30px;
+  }
+.galeria-images img {
+    width: 2rem;
+    height: 2rem;
+    border-radius:50%;
+    border:0.5px solid #100101;
+}
+/*fin Irina*/
+
+
+h1 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.tarjeta-producto p:last-of-type {
+    font-size: 12px;
+    color: var(--medium-grey);
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--medium-grey);
+    opacity: 0.3;
+}
+
+/* Selectores de Color e Interacción */
+.color-selector {
+    border: none;
+    margin: 20px 0;
+}
+
+.color-selector legend {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.color {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.color:hover {
+    transform: scale(1.1);
+}
+
+/* Colores específicos */
+.blue { background-color: #8bb6d9; }
+.white { background-color: #ffffff; }
+.black { background-color: #000000; }
+.grey { background-color: #57626B; }
+.green { background-color: #AECBFA; }
+.orange { background-color: #F28B82; }
+.pink { background-color: #F8BBD0; }
+.yellow { background-color: #FFF475; }
+
+input[type="radio"] {
+    display: none;
+}
+
+/* Feedback visual al seleccionar color */
+input[type="radio"]:checked + .color {
+    outline: 2px solid var(--google-blue);
+    outline-offset: 2px;
+}
+
+#cantidad {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--medium-grey);
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+button[type="submit"] {
+    background-color: var(--google-blue);
+    color: var(--white);
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* ============================================================
+   4. FOOTER MOBILE
+   ============================================================ */
+.site-footer {
+    background-color: #f1f3f4;
+    padding: 1rem 1.25rem 0.75rem;
+    text-align: center;
+}
+
+.site-redes-sociales {
+    margin-bottom: 0.35rem;
+}
+
+.lista-redes-sociales, 
+.lista-politicas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none; /* Quitamos los puntos de lista */
+    margin: 0;
+    padding: 0;
+}
+
+.lista-redes-sociales {
+    gap: 0.75rem;
+}
+
+.lista-politicas {
+    flex-direction: column; /* Apilados en móvil */
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.lista-redes-sociales a,
+.lista-politicas a {
+    text-decoration: none;
+    color: #5f6368;
+    font-size: 0.7rem;
+}
+
+.icon {
+    width: 1rem;
+    height: 1rem;
     display: block;
 }
 
+.site-pais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.7rem;
+    color: #5f6368;
+    margin-top: 10px;
+}
 
-    /* --- TU SECCIÓN (TARJETA PRODUCTO) --- */
-
-    .tarjeta-producto {
-        max-width: 450px;
-    }
-
-    /* Link de retroceso: Text Inter/regular/12px */
-    .tarjeta-producto p:first-of-type {
-        font-size: 12px;
-        font-weight: 400;
-        margin-bottom: 30px;
-        color: #57626B;
-        /* Gris intermedio de tus átomos */
-    }
-
-    /* Contenedor de imagen (basado en el Image Container del diagrama) */
-    .tarjeta-producto img {
-        display: block;
-        width: 200px;
-        /* Tamaño que tienes en tu HTML */
-        margin: 0 auto 40px auto;
-    }
-
-    /* Título: Inter/bold/35px */
-    .tarjeta-producto h1 {
-        font-size: 35px;
-        font-weight: 700;
-        /* Bold */
-        line-height: 1.2;
-        margin-bottom: 10px;
-        color: #353A49;
-    }
-
-    /* Subtítulo (Music & Sound): Inter/bold/20px */
-    .tarjeta-producto p:last-of-type {
-        font-size: 20px;
-        font-weight: 700;
-        /* Bold según el átomo de subtítulos */
-        margin-bottom: 25px;
-    }
-
-    /* Precio: Usando el tamaño de Subtítulo (20px) o el de Título si prefieres */
-    .tarjeta-producto h2 {
-        font-size: 20px;
-        font-weight: 700;
-        margin-bottom: 20px;
-    }
-
-    /* División: different wide - 1px (de tus átomos) */
-    .tarjeta-producto hr {
-        border: none;
-        border-top: 1px solid #57626B;
-        /* Gris de la guía */
-        opacity: 0.3;
-        /* Para que sea suave como en el diseño */
-    }
-
-    body {
-        background-color: #F8F9FA;
-    }
-
-    .class product-card {
-        display: flex;
-        border: 1px solid #e0e0e0;
-        border-radius: 8px;
-        padding: 16px;
-        margin: 16px;
-        text-align: center;
-    }
-
-    .color-selector legend {
-        font-size: 14px;
-        margin-bottom: 8px;
-    }
-
-    .color-selector {
-        border: none;
-        display: inline;
-        gap: 10px;
-        justify-content: center;
-        margin-top: 8px;
-
-    }
-
-    #cantidad {
-        width: 60px;
-        padding: 4px;
-        margin-top: 8px;
-        margin-bottom: 10px;
-        text-align: center;
-    }
-
-    button {
-        background-color: #1A73E8;
-        color: white;
-        border: none;
-        padding: 10px 40px;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-
-    .color {
-        display: inline-block;
-        border-radius: 50%;
-        border: 2px solid #ddd;
-        cursor: pointer;
-        width: 35px;
-        height: 35px;
-    }
-
-    /* Colores para los productos */
-    .blue {
-        background: #8bb6d9;
-    }
-
-    .white {
-        background: #ffffff;
-    }
-
-    .black {
-        background: #000000;
-    }
-
-    .grey {
-        background: #cfd4d9;
-    }
-
-    .green {
-        background: #dbe3b2;
-    }
-
-    .orange {
-        background: #f08063;
-    }
-
-
-
-
-
-    /* tamaño ordenador*/
-@media (min-width: 1024px) {
-    body {
-        font-family: var(--fuente-inter);
-        line-height: 1.6;
-        font-size: 100%;
-        list-style: none;
-        background-color: var(--color-principal);
-        color: var(--color-fuente);
-        min-height: 100vh;
-        width: 100%;
-    }
-
-    header {
-        background-color: var(--color-principal);
-        /* Blanco */
-        height: 80px;
-        display: flex;
-        align-items: center;
-        padding: 0 24px;
-        border-bottom: 2px solid #dfdbdb;
-        box-shadow: 0 4px 6px #00000014;
-    }
-
-    nav {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    /* Contenedor del Logo y el Menú de texto juntos */
-    .nav-links {
-        display: flex;
-        align-items: center;
-        gap: 32px;
-        /* Espacio entre logo y el primer link */
-    }
-
-    /* Estilo para las listas (ul) */
-    nav ul {
-        display: flex;
-        list-style: none;
-        gap: 20px;
-        /* Espacio entre palabras o iconos */
-        margin: 0;
-        padding: 0;
-    }
-
-    /* Estilo de los textos (Phones, Earbuds...) */
-    nav ul li a {
-        text-decoration: none;
-        color: #5f6368;
-        /* Gris típico de Google */
-        font-size: 14px;
-        font-weight: 500;
-    }
-
-    /* El color azul para el item activo (como 'Earbuds' en tu imagen) */
-    nav ul li a.active,
-    nav ul li a:hover {
-        color: var(--color-hover);
-        /* El azul #1A73E8 */
-    }
-
-    /* Tamaño de los iconos y logo */
-    nav img {
-        height: 24px;
-        width: auto;
-        cursor: pointer;
-    }
-
-    /* Ajuste del logo para que resalte */
-.google-logo {
-        height: 32px;
-        width: auto;
-        margin-right: 15px;
-    }
-
-    /* Mantén los iconos de la derecha en su tamaño estándar */
-    .nav-icons img {
-        height: 24px;
-        width: 24px;
-    }
-
-    .menu-mobile {
-        display: none;
-    }
-
-    /*body {
-        /* Usamos la tipografía Inter que pide el profesor */
-        font-family: 'Inter', sans-serif;
-        background-color: #FFFFFF;
-        color: #353A49;
-        /* Color de texto según tus átomos */
-        padding: 40px;
-        }*/                 
+.icon-bandera {
+    width: 1.4rem;
+    height: auto;
 }
